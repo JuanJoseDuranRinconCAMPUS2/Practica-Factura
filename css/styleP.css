@@ -1,0 +1,145 @@
+@import url(./style.css);
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+    .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+    .mercado{
+    border-radius: 1rem;
+    background-color:azure;
+    box-shadow: 0 0 3rem -1rem rgba(191, 182, 182, 0.25);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+    }
+    .mercado-imagen {
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+    }
+    .mercado-imagen img {
+    width: 100%;
+    max-width: 10rem;
+    }
+    .mercado-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    text-align: center;
+    }
+    .nombre-contenedor {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .digimon-nombre {
+    font-size: 1.4rem;
+    }
+    @media screen and (min-width: 470px) {
+    .products {
+    grid-template-columns: 1fr 1fr;
+    }
+    }
+    @media screen and (min-width: 700px) {
+    .products {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    }
+
+    .btn , .btn2, .btn3{
+        color: blue;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 2px solid blue;
+        padding: 10px 20px;
+        font-size: 17px;
+        font-weight: bold;
+        background: transparent;
+        position: relative;
+        transition: all 1s;
+        overflow: hidden;
+      }
+      
+      .btn:hover , .btn2:hover, .btn3:hover{
+        color: white;
+      }
+      
+      .btn::before , .btn2::before, .btn3::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: -40px;
+        transform: skewX(45deg);
+        background-color: blue;
+        z-index: -1;
+        transition: all 1s;
+      }
+      
+      .btn:hover::before , .btn2:hover::before, .btn3:hover::before{
+        width: 160%;
+      }
+
+      .modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #111111bd;
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .6s .9s;
+        --transform: translateY(-100vh);
+        --transition: transform .8s;
+    }
+.modal--show{
+        opacity: 1;
+        pointer-events: unset;
+        transition: opacity .6s;
+        --transform: translateY(0);
+        --transition: transform .8s .8s;
+    }
+.modal__container{
+    overflow-y: scroll;
+
+        margin: auto;
+        width: 90%;
+        max-width: 600px;
+        max-height: 90%;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 3em 2.5em;
+        display: grid;
+        gap: 1em;
+        place-items: center;
+        grid-auto-columns: 100%;
+        transform: var(--transform);
+        transition:var(--transition);
+    }
+.modal__title{
+        font-size: 2.5rem;
+    }
+.modal__paragraph{
+        margin-bottom: 10px;
+    }
+.modal__img{
+        width: 90%;
+        max-width: 300px;
+    }

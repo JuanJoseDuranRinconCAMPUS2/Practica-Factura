@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#contenido {
+    background-image: linear-gradient(to bottom, #0F4C81, #3490e2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#DonTienda{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+    }
+#DonTienda-img{
+    float: left;
+    width: 70%;
+}
+#DonTienda-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+#DonTienda-p{
+    margin: auto;
+    float: right;
+    width: 70%;
+    background-color: rgb(51, 51, 51, 0.5);
+}
+#DonTienda-p p{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 30px;
+    font-size: 2rem;
+    text-align: justify;
+    color:#f2f2f2;
+}
+@media (max-width: 768px) {
+    #DonTienda {
+    flex-direction: column;
+    }
+}
+    
+#introduccion{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-image: url('../img/pxfuel.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#introduccion p{
+    background-color: rgba(26, 213, 255, 0.5);
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Titulo2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.Titulo2:hover{
+    text-shadow: 10px 10px 10px #00576d;
+}
+
+.botonunu{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #1d2143;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   .botonunu span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   .botonunu a{
+    text-decoration: none;
+    color: #f2f2f2;
+   }
+   .botonunu span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   .botonunu:hover span {
+    padding-right: 15px;
+   }
+   
+   .botonunu:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+
+   

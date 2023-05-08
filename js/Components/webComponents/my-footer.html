@@ -1,0 +1,113 @@
+<footer class="footer">
+
+    <div class="wrap-footer">
+      <div class="text-element-footer element-footer">
+      <h3 class="main-c">Donde Lucho</h3>
+      <p>
+        Gracias por pedir tus compras en nuestra pagina, Don Lucho busca que todos sus usuarios puedan tener sus productos en cualquier momento
+        y por esto creamos esta pagina para traerte tu tiendita de confianza directamente en la puerta de tu casa
+      </p>
+      </div>
+      <div class="text-element-footer element-footer">
+        <h5>Dirección</h5>
+        <ul>
+          <li>Calle bonita</li>
+          <li>Puerto Madero</li>
+          <li>Tel: (+57) 315 684545645</li>
+        </ul>
+      </div>
+      <div class="text-element-footer link-elements-footer element-footer">
+    <h5>Más Información</h5>
+    <ul>
+    <li><a href="./index.html">Nosotros</a></li>
+    <li><a href="./productos.html">Productos</a></li>
+    <li><a href="/facturacion.html">Facturacion</a></li>
+    <li><a href="#">Contacto</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+  </footer>
+
+<style>
+    footer{
+    background-color: #73beff;
+  }
+  footer ul{
+    padding:0;
+  }
+  footer li{
+    list-style: none;
+  }
+  .wrap-footer{
+    display: grid;
+    grid-template-columns: 30% 30%  15%;
+    grid-gap: 10px;
+    column-gap: 5%;
+    padding: 1rem;
+    max-width: 1200px;
+  }
+  .logo-element_footer{
+    display: flex;
+    margin: 2rem 0;
+  }
+  .logo-element_footer img{
+    max-height: 75px;
+  }
+  .element-footer h5{
+    margin: 1rem 0;
+  }
+  .text-element-footer li{
+    line-height: 2;
+  }
+  .link-elements-footer li a{
+    color:#FFC300;
+  }
+  .rrss-element-footer ul{
+    display: flex;
+    flex-flow: wrap;
+  }
+  .rrss-element-footer img{
+    width: 35px;
+  }
+  .rrss-element-footer li{
+    margin-right: 1rem;
+  }
+  .footer-creds{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: #576171;
+    font-size: .9rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .legal-creds ul{
+    display: flex;
+    flex-flow: row;
+  }
+  .legal-creds ul li{
+    padding-right: 1rem;
+  }
+  .legal-creds ul a{
+    color: #576171;
+    font-size: .9rem;
+  }
+  @media (max-width:768px){
+    .wrap-footer{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media (max-width:480px){
+    .wrap-footer{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  
+  @media (max-width:320px){
+    .footer-creds{
+      flex-flow: column;
+    }
+  }
+</style>

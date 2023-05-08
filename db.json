@@ -1,0 +1,64 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "name": "papa",
+      "img": "./img/papa.jpeg",
+      "description": "un kilo de papas de la mejor calidad",
+      "precio": 1000
+    },
+    {
+      "id": 2,
+      "name": "cebolla",
+      "img": "./img/cebolla.jpg",
+      "description": "un kilo de cebollas de la mejor calidad",
+      "precio": 2000
+    },
+    {
+      "id": 3,
+      "name": "tomate",
+      "img": "./img/tomate.jpeg",
+      "description": "un kilo de tomates de la mejor calidad",
+      "precio": 1500
+    },
+    {
+      "id": 4,
+      "name": "pimenton",
+      "img": "./img/pimenton.jpg",
+      "description": "un kilo de pimenton de la mejor calidad",
+      "precio": 7000
+    },
+    {
+      "id": 5,
+      "name": "lechuga",
+      "img": "./img/lechuga.jpg",
+      "description": "lechugas de la mejor calidad",
+      "precio": 9000
+    },
+    {
+      "id": 6,
+      "name": "espinacas",
+      "img": "./img/espinacas.jpg",
+      "description": "espinacas de la mejor calidad",
+      "precio": 11000
+    }
+  ],
+  "factura": [],
+  "compra": [
+    {
+      "id": 1,
+      "name": "papa",
+      "img": "./img/papa.jpeg",
+      "description": "un kilo de papas de la mejor calidad",
+      "precio": 1000
+    },
+    {
+      "id": 6,
+      "name": "espinacas",
+      "img": "./img/espinacas.jpg",
+      "description": "espinacas de la mejor calidad",
+      "precio": 11000
+    }
+  ],
+  "total": []
+}
